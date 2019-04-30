@@ -1,0 +1,8 @@
+---
+# handlers file for environment
+- name: restart environment
+  service:
+    name: "{{ environment_service }}"
+    state: restarted
+  when:
+    - ansible_virtualization_type != "docker"

@@ -1,0 +1,41 @@
+---
+# vars file for environment
+_environment_requirements:
+  default:
+    - environment
+  Alpine:
+    - environment
+  Archlinux:
+    - environment
+  Debian:
+    - environment
+  CentOS:
+    - environment
+  CentOS-7:
+    - environment
+  Fedora:
+    - environment
+  openSUSE Leap:
+    - environment
+  Ubuntu:
+    - environment
+
+environment_requirements: "{{ _environment_requirements[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_environment_requirements[ansible_distribution] | default(_environment_requirements['default'])) }}"
+
+_environment_packages:
+  default:
+    - environment
+
+environment_packages: "{{ _environment_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_environment_packages[ansible_distribution] | default(_environment_packages['default'])) }}"
+
+_environment_config_directory:
+  default: /etc
+
+environment_config_directory: "{{ _environment_config_directory[ansible_distribution] | default(_environment_config_directory['default']) }}"
+
+environment_config_file: environment.conf
+
+_environment_service:
+  default: environment
+
+environment_service: "{{ _environment_service[ansible_distribution] | default(_environment_service['default']) }}"
