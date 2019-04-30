@@ -3,7 +3,7 @@ environment
 
 [![Build Status](https://travis-ci.org/robertdebock/ansible-role-environment.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-environment)
 
-Set system-wide variables
+Set system-wide variables.
 
 Example Playbook
 ----------------

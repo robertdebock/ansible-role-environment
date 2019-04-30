@@ -2,7 +2,7 @@
 galaxy_info:
   author: Robert de Bock
   role_name: environment
-  description: Set system-wide variables
+  description: Set system-wide variables.
   license: Apache-2.0
   company: none
   min_ansible_version: 2.6
