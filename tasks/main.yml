@@ -1,12 +1,5 @@
 ---
 # tasks file for environment
-- name: save variable settings in /etc/environment
-  lineinfile:
-    path: /etc/environment
-    regexp: '^{{ item.key }}='
-    line: '{{ item.key }}="{{ item.value }}"'
-  loop: "{{ environment_list | dict2items }}"
-
 - name: save variable settings in /etc/profile.d/custom.sh
   lineinfile:
     path: /etc/profile.d/custom.sh
