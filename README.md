@@ -6,8 +6,8 @@ environment
 
 Set system-wide variables.
 
-<img src="https://img.shields.io/ansible/role/d/40062"/>
-<img src="https://img.shields.io/ansible/quality/40062"/>
+<img src="https://img.shields.io/ansible/role/d/"/>
+<img src="https://img.shields.io/ansible/quality/"/>
 
 Example Playbook
 ----------------
