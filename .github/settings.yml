@@ -1,4 +1,7 @@
 ---
+#
+# Ansible managed
+#
 repository:
   description: Set system-wide variables.
   homepage: https://robertdebock.nl/
