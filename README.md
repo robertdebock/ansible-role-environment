@@ -2,9 +2,9 @@
 
 Set system-wide variables.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-environment.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-environment)|[![github](https://github.com/robertdebock/ansible-role-environment/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-environment/actions)|[![quality](https://img.shields.io/ansible/quality/40062)](https://galaxy.ansible.com/robertdebock/environment)|[![downloads](https://img.shields.io/ansible/role/d/40062)](https://galaxy.ansible.com/robertdebock/environment)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-environment.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-environment)|[![github](https://github.com/robertdebock/ansible-role-environment/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-environment/actions)|[![quality](https://img.shields.io/ansible/quality/40062)](https://galaxy.ansible.com/robertdebock/environment)|[![downloads](https://img.shields.io/ansible/role/d/40062)](https://galaxy.ansible.com/robertdebock/environment)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-environment.svg)](https://github.com/robertdebock/ansible-role-environment/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
