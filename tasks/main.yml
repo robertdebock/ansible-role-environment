@@ -6,4 +6,5 @@
     regexp: '^{{ item.key }}='
     line: '{{ item.key }}="{{ item.value }}"'
     create: yes
+    mode: "0644"
   loop: "{{ environment_list | dict2items }}"
