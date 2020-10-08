@@ -8,3 +8,5 @@
     create: yes
     mode: "0644"
   loop: "{{ environment_list | dict2items }}"
+  loop_control:
+    label: "{{ item.key }}"
