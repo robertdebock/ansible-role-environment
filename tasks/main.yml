@@ -1,5 +1,6 @@
 ---
 # tasks file for environment
+
 - name: save variable settings in /etc/profile.d/custom.sh
   lineinfile:
     path: /etc/profile.d/custom.sh
