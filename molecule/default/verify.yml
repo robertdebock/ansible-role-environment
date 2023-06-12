@@ -7,7 +7,7 @@
   tasks:
     - name: Check if variables are set
       ansible.builtin.shell:
-        cmd: source /etc/profile.d/custom.sh ; printenv
+        cmd: . /etc/profile.d/custom.sh ; printenv
       register: environment_results
       failed_when:
         - "'my_variable=my_value' not in environment_results.stdout"
