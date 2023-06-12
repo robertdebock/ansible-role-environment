@@ -5,5 +5,11 @@
   gather_facts: no
 
   tasks:
-    - name: Check if connection still works
-      ansible.builtin.ping:
+    - name: Check if variables are set
+      ansible.builtin.shell:
+        cmd: source /etc/profile.d/custom.sh ; printenv
+      register: environment_results
+      failed_when:
+        - "'my_variable=my_value' not in environment_results.stdout"
+        - "'my_other_variable=my_other_value' not in environment_results.stdout"
+        - "':/my/path' not in environment_results.stdout"
