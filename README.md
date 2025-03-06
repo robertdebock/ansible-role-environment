@@ -18,7 +18,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   gather_facts: true
 
   roles:
-    - role: ansible-role-environment
+    - role: robertdebock.environment
       environment_list:
         my_variable: "my_value"
         my_other_variable: "my_other_value"
