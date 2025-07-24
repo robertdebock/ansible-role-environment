@@ -11,3 +11,5 @@
   loop: "{{ environment_map | dict2items }}"
   loop_control:
     label: "{{ item.key }}"
+  when:
+    - environment_map is defined
