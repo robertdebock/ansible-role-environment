@@ -6,7 +6,7 @@
 
   roles:
     - role: robertdebock.environment
-      environment_list:
+      environment_map:
         my_variable: "my_value"
         my_other_variable: "my_other_value"
         PATH: "$PATH:/my/path"
